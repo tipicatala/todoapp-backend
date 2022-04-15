@@ -1,0 +1,21 @@
+name: testApp
+
+entryPoint:
+  - main.sc
+
+botEngine: v2
+language: ru
+sts:
+  noMatchThreshold: 0.2
+caila:
+  noMatchThreshold: 0.2
+  
+scriptsPreload: 
+    global:
+        - /jslib/moment.min.js
+        - /jslib/underscore.js
+        - /jsapi/common.js
+        - /jsapi/https.js
+    local:
+        - /jsapi/reactions.js
+        - /jsapi/mail.js
